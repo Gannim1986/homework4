@@ -1,0 +1,55 @@
+#quiz {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: blue;
+
+}
+
+#start {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+#container{
+    background-color: gray;
+    padding: 20px;
+    color: white;
+}
+
+.btn {
+    width: 200px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 5px;
+} 
+
+#countdown {
+       display: flex;
+       justify-content: center;
+       
+       float: right;
+}
+
+ .option{
+    margin: 11px;
+    padding: 10px;
+    
+    justify-content: left;
+    text-align: left;
+    text-decoration: none;
+}
+ .option1 { 
+     margin: 20px;
+
+ }
+
+ 

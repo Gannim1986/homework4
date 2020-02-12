@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assests/css/style.css">
+
+  <title>Quiz game</title>
+</head>
+
+<body>
+  <h1 id="quiz">QUIZ GAME</h1>
+  <br>
+
+
+  <div class="container-1">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 col-sm-12" id="game-controls">
+        <button>View Highscores</button>
+        <button>Restart Game</button>
+        <div class="high-scores hidden"></div>
+        <div class="display-message">
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 col-sm-12" id="game-view">
+        <div class="start-game">
+          <h3>JavaScript code Quiz game.</h3>
+          <hr>
+          <br>
+          <h4>Instructions</h4>
+          <br>
+          <h5>How to Play</h5>
+          <hr>
+          <br>
+          <p>Click the Start button to begin the game.
+            Once clicked Timer will start immediately.
+            you will have 60 seconds to answer all question.
+            Read questions carefully and select one of the correct answer out of 4 options.
+            Once you get the correct answer your score will go up by 1 point and next question will be display.
+            If you get Incorrect answer it will decrease your time by 15 seconds.
+            once you have completed the quiz you will have to enter your Name and scores will be displayed.
+            You can Restart the game by clicking on restart button.
+
+          </p>
+          <button type="button" id="start-button">Start Game</button>
+        </div>
+      </div>
+
+
+
+      
+    </div>
+  </div>
+  
+<div class="wrapper">
+  <div id="question"></div>
+  <div class="option">
+      <button class="option1" onclick="questionClicked()"></button>
+      <button class="option2" onclick="questionClicked()"></button>
+      <button class="option3" onclick="questionClicked()"></button>
+      <button class="option4" onclick="questionClicked()"></button>
+  </div>
+    <br>
+    <button id="next-btn"> Next</button>
+  </div>
+  
+
+</div>
+  <div class="end-game hidden" >
+    <h1 id="score"></h1>
+    <button type="button" id="save_score">Save scores</button>
+    <button type="button">Clear scores</button>
+  </div>
+
+  <div>
+    <h3 id="countdown" class="hidden"></h3>
+  </div>
+
+
+  
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  
+  <script src="./assests/js/app.js"></script>
+</body>
+
+</html>
