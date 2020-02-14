@@ -57,12 +57,6 @@ $(document).ready(function () {
         $('.option4').text(questions[qIndex].choices[3]);    
     };
 
-    // $('.option').on('click', function(e){
-    //     console.log("heeeeeeeeyyyyyy", e.target);
-    //     $(e.target).text();
-        
-    // })
-
     $('.option').on('click', questionClicked);
       
     function questionClicked(e){
