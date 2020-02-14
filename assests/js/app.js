@@ -36,7 +36,7 @@ $(document).ready(function () {
         $('#start-button').addClass('hidden');
         $('#container').addClass('hidden');
         $('.timer').addClass('hidden');
-        $('.wrapper').show('hidden');
+        $('.wrapper').removeClass('hidden');
         showQuestion();
         
         let timeInterval = setInterval(function () {
@@ -56,12 +56,21 @@ $(document).ready(function () {
         $('.option3').text(questions[qIndex].choices[2]);
         $('.option4').text(questions[qIndex].choices[3]);    
     };
-    
+
+    // $('.option').on('click', function(e){
+    //     console.log("heeeeeeeeyyyyyy", e.target);
+    //     $(e.target).text();
+        
+    // })
+
+    $('.option').on('click', questionClicked);
       
-    function questionClicked(){
+    function questionClicked(e){
         //    log answers to the questions.
-        for (let i = 0; i < questions.length; i++);
-        if(this.value === questions[qIndex](i).answer){
+        
+        var value = $(e.target).text();
+        console.log(value);
+        if(value === questions[qIndex].answer){
             //increment the score.
             score++;
             showQuestion()
@@ -74,9 +83,11 @@ $(document).ready(function () {
         }else{
             // if qIndex is less then 3 show next question.
             qIndex++;
-            showQuestion()    
+            showQuestion()  
         }     
     };
+
+
       
     //display next question.
     //update score.
