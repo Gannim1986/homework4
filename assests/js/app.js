@@ -38,6 +38,7 @@ $(document).ready(function () {
         $('.timer').addClass('hidden');
         $('.wrapper').removeClass('hidden');
         showQuestion();
+        restart();
         
         let timeInterval = setInterval(function () {
             if (timer > 0) {
@@ -77,9 +78,25 @@ $(document).ready(function () {
         }else{
             // if qIndex is less then 3 show next question.
             qIndex++;
-            showQuestion()  
+            showQuestion();         
+            savescore();
         }     
     };
+
+    function savescore(){
+        
+        scoreStorage = JSON.parse(localStorage.getItem('scoreStorage'));
+        console.log(scoreStorage);
+    }
+
+    function restart(){
+        const restartGame = $('#restart')
+        restartGame.on('click', function(){
+            $('#container').removeClass('hidden');
+            
+        });
+    }
+   
 
 
       
